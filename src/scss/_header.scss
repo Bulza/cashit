@@ -11,8 +11,12 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (min-width: 320px) and (max-width: 480px){
+            margin:10px 4px;
+        }
         @media (min-width: 992px) {
             margin: 7px 0;
+            
         }
         @media (max-width: 992px) {
             flex-wrap: wrap;

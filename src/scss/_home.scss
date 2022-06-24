@@ -1,5 +1,10 @@
 .section_form {
     background-image: url(/dist/img/backgroundclock.png);
+    @media (min-width: 320px) and (max-width: 480px){
+      background-image: url(/dist/img/Mask\ Group\ 18.png);
+      width: 100%;
+      height: 300px;
+    }
     background-size: 100% 100%;
     padding-top: 62px;
     height: 700px;
@@ -7,22 +12,34 @@
   .contactform {
     padding-top: 100px;
     padding-bottom: 300px;
+    @media (min-width: 320px) and (max-width: 480px){
+    padding:unset
+    
+    }
   }
   .section-text {
     padding-top: 50px;
     @media (min-width: 320px) and (max-width: 480px){
       text-align: center;
+      padding-top:28px;
     }
     h1 {
       font-family: $latobold;
       @media (min-width: 320px) and (max-width: 480px){
         font-size: 24px;
+        font-family: $latobold;
+        text-align: center;
+        line-height: 24px;
+        opacity: 1;
       }
     }
     p {
       font-family: $latoregular;
       @media (min-width: 320px) and (max-width: 480px){
-      padding: 7px;
+      font-size: 14px;
+      font-family: $latoregular;
+      line-height: 18px;
+      text-align: center;
     }
   }
 }
@@ -67,8 +84,19 @@
   
   .brands {
     background-color: #eef4f1;
+    @media (min-width: 320px) and (max-width: 480px){
+     img{
+      width: 58px;
+      height:28px;
+    }
   }
-  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    img{
+      width: 100px;
+      height:60px;
+    }
+  }
+}
   .heading {
     padding-left: 300px;
     font-weight: bold;
@@ -80,15 +108,26 @@
     padding-bottom: 80px;
     padding-left: 17px;
     padding-right: 10px;
+    @media (min-width: 320px) and (max-width: 480px){
+      padding-top:40px;
+      padding-bottom: 40px;
+    }
 
     h3 {
       font-weight: bold;
       font-size: 40px;
       align-items: center;
       padding-bottom: 15px;
-      font-family: $latobold;
+      font-family: $latoblack;
       display: flex;
       justify-content: start;
+      @media (min-width: 320px) and (max-width: 480px){
+        font-size:32px;
+        line-height: 62px;
+        justify-content: center;
+        padding-bottom:unset;
+        
+      }
     }
     h6 {
       font-size: 21px;
@@ -126,8 +165,10 @@
     h6 {
       font-size: 21px;
       @media (min-width: 320px) and (max-width: 480px){
-       
-     
+      font-family: $latobold;
+      font-size: 15px;
+      text-align: left;
+      opacity: 1;
       }
     }
     .one {
@@ -149,6 +190,10 @@
       @media (min-width: 320px) and (max-width: 480px){
       font-family: $latoregular;
       font-size: 14px;
+      color:#707070;
+      text-align: left;
+      opacity: 0.8;
+      line-height: 18px;
       }
     }
   }
@@ -166,6 +211,8 @@
       @media (min-width: 320px) and (max-width: 480px){
       margin-bottom: -13px;
       font-size: 32px;
+      font-family: $latoblack;
+      text-transform: capitalize;
     }
   }
     img {
@@ -176,6 +223,23 @@
       padding-top: 30px;
       font-family: "Latoregular";
       padding-bottom: 2px;
+      @media (min-width: 320px) and (max-width: 480px){
+        font-size: 14px;
+        font-family: $latoregular;
+        line-height: 24px;
+        opacity: 1;
+        color: #232633;
+      }
+      #myBtn-2{
+          font-size: 16px;
+          font-family: 'latobold';
+          text-decoration: underline;
+        @media (min-width: 320px) and (max-width: 480px){
+          font-size: 16px;
+          font-family: 'latobold';
+          text-decoration: underline;
+        }
+       }
     }
     .readless {
       text-size-adjust: 10px;
@@ -231,6 +295,12 @@
       left: 2px;
       img{
         width: 46px;
+        @media (min-width: 320px) and (max-width: 480px){
+          width: 42px;
+          @media (min-width: 320px) and (max-width: 480px){
+            width: 42px;
+          }
+        }
       }
     }
   }
@@ -245,6 +315,9 @@
       left: 2px;
       img{
         width: 46px;
+        @media (min-width: 320px) and (max-width: 480px){
+          width: 42px;
+        }
       }
     }
   }
@@ -260,6 +333,9 @@
       width: 46px;
       img{
         width: 46px;
+        @media (min-width: 320px) and (max-width: 480px){
+          width: 42px;
+        }
       }
     }
   }
@@ -269,6 +345,24 @@
     padding: 75px 0px;
     padding-bottom: 110px;
 
+    .slick-dots .slick-active {
+      width: 50%;
+      height: 3px;
+      background: #232633;
+      border-radius: 25px;
+      margin-right: 10px;
+  }
+
+    ul.slick-dots{
+      position:relative;
+
+      li.slick-active{
+        position: absolute;
+        left: 18px;
+      }
+      
+  }
+  
     @media (min-width: 320px) and (max-width: 480px) {
     padding: 28px 10px;
     padding-bottom: 56px;
@@ -317,6 +411,8 @@
             text-align: left;
 
          }
+
+        
       }
 
     }
@@ -332,6 +428,19 @@
     span {
       font-weight: 600;
     }
+
+    #myBtn{
+      font-size: 16px;
+      font-family: 'latobold';
+      text-decoration: underline;
+      @media (min-width: 320px) and (max-width: 480px){
+        font-size: 16px;
+        font-family: 'latobold';
+        text-decoration: underline;
+      }
+     }
+
+    
   }
   
   .fourthsection {
@@ -341,7 +450,11 @@
         font-size: 21px;
         font-family: $latobold;
         @media (min-width: 320px) and (max-width: 480px) {
-          font-size: 24px;
+          font-size: 23px;
+          font-family: $latobold;
+          line-height: 36px;
+          opacity: 1;
+          color:#000
           }
         }
 
@@ -369,9 +482,15 @@
   
     .best-price {
       position: absolute;
-      right: 393px;
+      right: 382px;
+      top: 31px;
       @media (min-width: 320px) and (max-width: 480px) {
-        left: -36px;
+        left: -25px;
+        img{
+          @media (min-width: 320px) and (max-width: 480px){
+            width: 40px;
+          }
+        }
       }
       
     }
@@ -380,6 +499,8 @@
       font-family: $latoregular;
       @media (min-width: 320px) and (max-width: 480px) {
         font-size: 14px;
+        opacity: 0.8;
+        line-height: 18px;
         }
     }
   }
@@ -408,8 +529,13 @@
       right: 382px;
       top: 31px;
       @media (min-width: 320px) and (max-width: 480px) {
-        left: -36px;
-        
+        left: -25px;
+
+        img{
+          @media (min-width: 320px) and (max-width: 480px){
+            width: 40px;
+          }
+        }
       }
     }
     }
@@ -440,7 +566,12 @@
       top: 29px;
       left: -20px;
       @media (min-width: 320px) and (max-width: 480px) {
-       left: -36px;
+       left: -25px;
+       img{
+        @media (min-width: 320px) and (max-width: 480px){
+          width: 40px;
+        }
+      }
     }
      
       }
@@ -454,15 +585,55 @@
     text-align: center;
     padding-bottom: 10px;
     padding-top: 22px;
+
+    p{
+      font-family: 'latoregular';
+    font-size: 20px;
+    opacity: 1;
+    color: #000000;
+    @media (min-width: 320px) and (max-width: 480px){
+      font-size: 14px;
+      text-align: center;
+      line-height: 23px;
+      opacity: 1;
+    }
+    }
   }
   
   .footer-form {
     background-color: #f5f5f5;
     padding-top: 45px;
-  }
+    @media (min-width: 320px) and (max-width: 480px){
+      padding-top:10px;
+    }
+
+    .row {
+      h3{
+        font-family: 'latobold';
+    font-size: 28px;
+    line-height: 45px;
+    opacity: 1;
+}
+      }
+    }
+  
   .info-footer {
     padding-top: 20px;
     font-weight: 400;
+
+    p{
+    font-family: 'latoregular';
+    font-size: 18px;
+    opacity: 1;
+    color: #000000;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-bottom:24px;
+    }
+    p:first-child {
+      margin-bottom:45px;
+    }
+
   }
   .wrapper-quote {
     width: 100%;
@@ -518,7 +689,7 @@
       padding: 20px 0px;
       padding-bottom: 68px;
       @media (min-width: 320px) and (max-width: 480px){
-        font-size: 32px;
+        font-size: 30px;
         font-family: $latoblack;
         text-align: center;
         padding: unset;
@@ -569,6 +740,10 @@
   .first-col {
     padding-top: 30px;
     padding-bottom: 60px;
+    @media (min-width: 320px) and (max-width: 480px){
+      padding-top:30px;
+      padding-bottom: unset;
+    }
   }
   
   .footer {
@@ -579,6 +754,15 @@
   .footer-p {
     padding-top: 20px;
     font-weight: 500;
+    p{
+      @media (min-width: 320px) and (max-width: 480px){
+        font-size: 18px;
+        font-family: $latoregular;
+        line-height: 28px;
+        color:#797979;
+        line-height: 28px;
+      }
+    }
   }
   
   .info-footer {
@@ -684,9 +868,7 @@
     left: -80px;
     top: 45%;
     background: url('../img/prev.png') no-repeat !important;
-    
-    
-    
+    font-size: 0;   
 }
 button.slick-next.slick-arrow {
     right: -80px;
@@ -710,3 +892,11 @@ button.slick-next.slick-arrow {
     background: url('../img/next.png') no-repeat !important;
     font-size: 0;
   }
+  
+
+  .image-test {
+    min-height: 500px;
+    background-image: url('../img/MicrosoftTeams-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
